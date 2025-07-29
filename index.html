@@ -76,14 +76,35 @@
                 </svg>
                 <h1 class="text-xl font-bold tracking-wider">MODUL</h1>
             </div>
-            <nav class="flex-1 px-4 py-6 space-y-2">
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul1')">M1: Pengenalan</a>
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul2')">M2: Komponen</a>
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul3')">M3: Generasi</a>
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul4')">M4: Kes Gunaan</a>
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul5')">M5: Rangkaian</a>
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul6')">M6: Smart Contract</a>
-                <a href="#" class="nav-link flex items-center py-3 px-4 rounded-lg" onclick="openTab(event, 'modul7')">M7: Crypto</a>
+            <nav class="flex-1 px-4 py-6 space-y-2" role="tablist">
+                <a href="#modul1" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul1" role="tab" id="modul1-tab" aria-controls="modul1">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
+                    M1: Pengenalan
+                </a>
+                <a href="#modul2" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul2" role="tab" id="modul2-tab" aria-controls="modul2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path d="M11 17a1 1 0 001.447.894l4-2A1 1 0 0017 15V9.236a1 1 0 00-1.447-.894l-4 2a1 1 0 00-.553.894V17zM15.211 6.276a1 1 0 00-1.447-.894l-4 2A1 1 0 009 8.236V15a1 1 0 001.447.894l4-2A1 1 0 0015 13V7.236a1 1 0 00.211-.96zM4.789 6.276a1 1 0 00-1.447.894l-2 4A1 1 0 002 12v2.236a1 1 0 001.447.894l2-1A1 1 0 006 13V7.236a1 1 0 00-.211-.96zM10 3a1 1 0 00-1.447-.894l-2 1A1 1 0 006 4v.236a1 1 0 001.447.894l2-1A1 1 0 0010 3z" /></svg>
+                    M2: Komponen
+                </a>
+                <a href="#modul3" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul3" role="tab" id="modul3-tab" aria-controls="modul3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 11.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L12 12.586l3.293-3.293V7z" clip-rule="evenodd" /></svg>
+                    M3: Generasi
+                </a>
+                <a href="#modul4" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul4" role="tab" id="modul4-tab" aria-controls="modul4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 11-2 0V4H6a1 1 0 01-1-1z" clip-rule="evenodd" /><path d="M18.5 7.5a1 1 0 00-1-1h-11a1 1 0 00-1 1v11a1 1 0 001 1h11a1 1 0 001-1v-11z" /></svg>
+                    M4: Kes Gunaan
+                </a>
+                <a href="#modul5" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul5" role="tab" id="modul5-tab" aria-controls="modul5">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M15 8a3 3 0 10-2.977-2.63l-4.94 2.47a3 3 0 100 4.319l4.94 2.47a3 3 0 10.895-1.789l-4.94-2.47a3.027 3.027 0 000-.74l4.94-2.47C13.456 7.68 14.19 8 15 8z" /></svg>
+                    M5: Rangkaian
+                </a>
+                <a href="#modul6" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul6" role="tab" id="modul6-tab" aria-controls="modul6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" /></svg>
+                    M6: Smart Contract
+                </a>
+                <a href="#modul7" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul7" role="tab" id="modul7-tab" aria-controls="modul7">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.5 2.5 0 00-2.12 2.152H10V14c.245.078.48.188.704.318A7.5 7.5 0 018 15a7.5 7.5 0 01-7.5-7.5 7.5 7.5 0 016.433-7.418z" /><path d="M14.5 7.5a7.5 7.5 0 00-1.567-4.418C14.346.904 16.137 0 18 0s3.654.904 4.067 3.082A7.5 7.5 0 0014.5 7.5z" /></svg>
+                    M7: Crypto
+                </a>
             </nav>
         </aside>
 
@@ -96,7 +117,7 @@
                             <p class="mt-1 text-sm text-gray-500">[Siri 1 / 2025]</p>
                         </div>
                         <div class="lg:hidden">
-                            <button id="menu-btn" class="text-gray-500 focus:outline-none">
+                            <button id="menu-btn" class="text-gray-500 focus:outline-none" aria-expanded="false" aria-controls="mobile-menu">
                                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                             </button>
                         </div>
@@ -105,112 +126,288 @@
             </header>
             
             <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md">
-                <nav class="flex flex-col p-4 space-y-1">
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul1')">M1: Pengenalan</a>
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul2')">M2: Komponen</a>
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul3')">M3: Generasi</a>
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul4')">M4: Kes Gunaan</a>
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul5')">M5: Rangkaian</a>
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul6')">M6: Smart Contract</a>
-                    <a href="#" class="nav-link flex items-center py-2 px-3 rounded-md" onclick="openTab(event, 'modul7')">M7: Crypto</a>
+                <nav class="flex flex-col p-4 space-y-1" role="tablist">
+                    <a href="#modul1" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul1" role="tab" id="modul1-mobile-tab" aria-controls="modul1">M1: Pengenalan</a>
+                    <a href="#modul2" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul2" role="tab" id="modul2-mobile-tab" aria-controls="modul2">M2: Komponen</a>
+                    <a href="#modul3" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul3" role="tab" id="modul3-mobile-tab" aria-controls="modul3">M3: Generasi</a>
+                    <a href="#modul4" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul4" role="tab" id="modul4-mobile-tab" aria-controls="modul4">M4: Kes Gunaan</a>
+                    <a href="#modul5" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul5" role="tab" id="modul5-mobile-tab" aria-controls="modul5">M5: Rangkaian</a>
+                    <a href="#modul6" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul6" role="tab" id="modul6-mobile-tab" aria-controls="modul6">M6: Smart Contract</a>
+                    <a href="#modul7" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul7" role="tab" id="modul7-mobile-tab" aria-controls="modul7">M7: Crypto</a>
                 </nav>
             </div>
 
             <main class="flex-1 p-6 md:p-10 overflow-y-auto">
                 
-                <div id="modul1" class="main-content">
+                <div id="modul1" class="main-content" role="tabpanel" aria-labelledby="modul1-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 1: Pengenalan kepada Blockchain</h2>
                     <div class="space-y-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Apakah itu Blockchain?</h3>
+                            <p class="text-gray-600 leading-relaxed">Blockchain adalah satu set teknologi lejar teragih (distributed ledger) yang tidak boleh diubah (immutable). Ia boleh diprogramkan untuk merekod dan menjejaki apa sahaja yang bernilai (transaksi kewangan, rekod perubatan, hak milik tanah, dll.). Data ini disimpan dalam 'blok' yang disambungkan antara satu sama lain dalam 'rantaian' mengikut urutan kronologi dan dikunci secara kriptografi.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Bagaimana Blockchain Berfungsi (Langkah demi Langkah)</h3>
+                            <ol class="list-decimal list-inside space-y-3 mt-4 text-gray-600 leading-relaxed">
+                                <li><strong>Permintaan Transaksi:</strong> Seorang pengguna meminta satu transaksi.</li>
+                                <li><strong>Penciptaan Blok:</strong> Satu blok yang mewakili transaksi itu dicipta.</li>
+                                <li><strong>Siaran ke Rangkaian:</strong> Blok itu disiarkan ke semua nod (komputer) dalam rangkaian.</li>
+                                <li><strong>Pengesahan (Validation):</strong> Semua nod mengesahkan blok dan transaksi tersebut.</li>
+                                <li><strong>Penambahan ke Rantaian:</strong> Blok yang sah ditambah ke dalam rantaian.</li>
+                                <li><strong>Penyelesaian Transaksi:</strong> Transaksi disahkan dan dilaksanakan.</li>
+                            </ol>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Kenapa Guna Blockchain? Isu Kepercayaan</h3>
+                            <p class="text-gray-600 leading-relaxed">Dalam sistem tradisional, kita bergantung pada pihak ketiga yang dipercayai (bank, kerajaan). Blockchain mengubah ini dengan membolehkan dua pihak berurus niaga secara terus antara satu sama lain dengan selamat, walaupun mereka tidak mengenali atau mempercayai satu sama lain. Kepercayaan dipindahkan dari institusi kepada teknologi itu sendiri.</p>
+                        </div>
+                        
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Bayangkan Blockchain seperti sebuah **buku nota digital yang dikongsi** bersama semua orang. Setiap orang ada salinan yang sama. Sebarang catatan baru akan ditambah pada muka surat baru, dan semua orang boleh nampak, tetapi tiada siapa yang boleh memadam atau mengubah catatan lama.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M1.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                                <img src="peta minda/M1.svg" alt="Peta Minda Modul 1" class="max-h-full max-w-full object-contain">
+                            </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M1.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M1.svg" download="M1.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
+                                <a href="peta minda/M1.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M1.svg" download="M1_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="modul2" class="main-content">
+                <div id="modul2" class="main-content" role="tabpanel" aria-labelledby="modul2-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 2: Komponen Utama</h2>
                     <div class="space-y-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Kriptografi (Cryptography)</h3>
+                            <p class="text-gray-600 leading-relaxed">Kriptografi adalah kaedah untuk melindungi maklumat dengan menukarnya menjadi format yang tidak boleh dibaca. Ia menggunakan pengiraan matematik (algoritma) untuk menyulitkan data, yang kemudiannya dinyahsulit oleh penerima.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Fungsi Hash (Hash Function)</h3>
+                            <p class="text-gray-600 leading-relaxed">Hash adalah teknik yang digunakan untuk mengenal pasti objek tertentu secara unik dari sekumpulan objek yang serupa. Ia adalah fungsi matematik yang menukar input menjadi nilai berangka yang mampat—hash.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Tandatangan Digital (Digital Signature)</h3>
+                            <p class="text-gray-600 leading-relaxed">Nilai hash mesej apabila disulitkan dengan kunci peribadi seseorang adalah tandatangan digitalnya pada e-Dokumen tersebut. Ia digunakan untuk memastikan Ketulenan, Integriti, dan Tanpa Sangkal (Non-repudiation) dokumen elektronik.</p>
+                        </div>
+
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Setiap catatan dalam buku nota digital tadi dilindungi seperti surat rahsia. Ia dikunci dengan **kod rahsia** (kriptografi), mempunyai **cap jari unik** (hash), dan dimeterai dengan **cop mohor lilin peribadi** (tandatangan digital) untuk pastikan ia tulen dan tidak diubah.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M2.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                                <img src="peta minda/M2.svg" alt="Peta Minda Modul 2" class="max-h-full max-w-full object-contain">
+                            </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M2.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M2.svg" download="M2.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
+                                <a href="peta minda/M2.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M2.svg" download="M2_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="modul3" class="main-content">
+                <div id="modul3" class="main-content" role="tabpanel" aria-labelledby="modul3-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 3: Generasi-Generasi Blockchain</h2>
                     <div class="space-y-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Generasi 1: Mata Wang Digital</h3>
+                            <p class="text-gray-600 leading-relaxed">Fokus utama adalah untuk mencipta mata wang digital terdesentralisasi. Ia memperkenalkan konsep transaksi peer-to-peer tanpa memerlukan perantara seperti bank. Bitcoin dan Ethereum adalah contoh mata wang kripto.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Generasi 2: Smart Contract</h3>
+                            <p class="text-gray-600 leading-relaxed">Memperkenalkan keupayaan untuk melaksanakan kod program di atas blockchain. Ini membolehkan penciptaan "kontrak pintar" (smart contracts) yang berjalan secara automatik apabila syarat-syarat tertentu dipenuhi.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Generasi 3: Aplikasi Terdesentralisasi (DApps)</h3>
+                            <p class="text-gray-600 leading-relaxed">Fokus pada pembinaan aplikasi berskala besar yang berjalan di atas rangkaian blockchain. DApps bertujuan untuk menyediakan perkhidmatan yang sama seperti aplikasi web tradisional tetapi tanpa kawalan berpusat, meningkatkan privasi dan rintangan penapisan.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Generasi 4: Penggunaan dalam Industri</h3>
+                            <p class="text-gray-600 leading-relaxed">Blockchain mula diterima pakai secara meluas dalam pelbagai industri seperti kewangan, penjagaan kesihatan, rantaian bekalan, dan kerajaan untuk meningkatkan kecekapan, ketelusan, dan keselamatan.</p>
+                        </div>
+
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Ia seperti **evolusi telefon**. Mula-mula, ia hanya untuk membuat panggilan (Generasi 1: Mata Wang). Kemudian, ia boleh menghantar SMS (Generasi 2: Smart Contract). Seterusnya, ia menjadi telefon pintar yang boleh menjalankan pelbagai aplikasi (Generasi 3 & 4: DApps).</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M3.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                                <img src="peta minda/M3.svg" alt="Peta Minda Modul 3" class="max-h-full max-w-full object-contain">
+                            </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M3.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M3.svg" download="M3.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
+                                <a href="peta minda/M3.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M3.svg" download="M3_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 
-                <div id="modul4" class="main-content">
+                <div id="modul4" class="main-content" role="tabpanel" aria-labelledby="modul4-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 4: Kes Gunaan di Malaysia</h2>
                     <div class="space-y-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Sistem Pengurusan Vaksin (VMS) oleh MIMOS</h3>
+                            <p class="text-gray-600 leading-relaxed">VMS dibangunkan oleh MIMOS berasaskan blockchain hyperledger fabric untuk memastikan tadbir urus yang baik dalam pengurusan vaksin COVID-19. Sistem ini direka untuk mencegah vaksin palsu dan menjana sijil vaksinasi digital.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Projek Perintis LESA (Lesen Elektronik Samudera)</h3>
+                            <p class="text-gray-600 leading-relaxed">Satu kerjasama antara MOSTI, MAMPU, dan Jabatan Laut, LESA menggunakan blockchain Ethereum untuk menyimpan rekod pendaftaran kapal secara digital. Pemilik kapal boleh menunjukkan sijil melalui kod QR, dan pihak berkuasa boleh mengesahkannya dengan serta-merta.</p>
+                        </div>
+
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Menggunakan buku nota digital yang dikongsi tadi untuk **mencatat barang-barang penting di Malaysia**. Contohnya, setiap suntikan vaksin atau setiap lesen kapal dicatat. Kerana semua orang boleh lihat dan ia tak boleh dipadam, semua orang yakin catatan itu adalah yang asli dan sahih.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M4.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                                <img src="peta minda/M4.svg" alt="Peta Minda Modul 4" class="max-h-full max-w-full object-contain">
+                            </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M4.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M4.svg" download="M4.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
+                                <a href="peta minda/M4.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M4.svg" download="M4_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="modul5" class="main-content">
+                <div id="modul5" class="main-content" role="tabpanel" aria-labelledby="modul5-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 5: Jenis-Jenis Rangkaian</h2>
-                    <div class="space-y-8 mt-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
-                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M5.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
-                            <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M5.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M5.svg" download="M5.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
-                            </div>
+                            <h3 class="text-xl font-semibold mb-3 text-gray-700">Rangkaian Awam (Public)</h3>
+                            <p class="text-gray-600 leading-relaxed">Sesiapa sahaja bebas untuk menyertai dan mengambil bahagian dalam aktiviti rangkaian blockchain. Ia tidak terhad dan tanpa kebenaran.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-700">Rangkaian Persendirian (Private)</h3>
+                            <p class="text-gray-600 leading-relaxed">Peserta hanya boleh menyertai melalui jemputan di mana identiti mereka disahkan. Ia mengawal siapa yang dibenarkan untuk mengambil bahagian dalam rangkaian.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-700">Rangkaian Konsortium (Consortium)</h3>
+                            <p class="text-gray-600 leading-relaxed">Juga dikenali sebagai blockchain persekutuan, ia adalah blockchain berkebenaran yang ditadbir oleh sekumpulan syarikat. Ia sama seperti blockchain hibrid yang mempunyai ciri-ciri awam dan persendirian.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-semibold mb-3 text-gray-700">Rangkaian Hibrid (Hybrid)</h3>
+                            <p class="text-gray-600 leading-relaxed">Selalunya dirujuk sebagai gabungan kedua-dua blockchain awam dan persendirian. Walaupun entiti swasta mungkin memiliki blockchain hibrid, ia tidak boleh mengubah transaksi.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg mt-8">
+                        <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                            Analogi Ringkas
+                        </h3>
+                        <p class="text-indigo-700 leading-relaxed">Ia seperti jenis-jenis **kelab sosial**. Ada kelab yang seperti **taman awam** (Public), sesiapa pun boleh masuk. Ada yang **kelab eksklusif** (Private), hanya untuk ahli berjemputan. Ada juga kelab yang merupakan **kerjasama beberapa syarikat** (Consortium).</p>
+                    </div>
+
+                    <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg mt-8">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
+                        <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                            <img src="peta minda/M5.svg" alt="Peta Minda Modul 5" class="max-h-full max-w-full object-contain">
+                        </div>
+                        <div class="mt-6 flex justify-end space-x-3">
+                            <a href="peta minda/M5.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                            <a href="peta minda/M5.svg" download="M5_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                         </div>
                     </div>
                 </div>
                 
-                <div id="modul6" class="main-content">
+                <div id="modul6" class="main-content" role="tabpanel" aria-labelledby="modul6-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 6: Smart Contracts</h2>
                     <div class="space-y-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Apakah itu Smart Contract?</h3>
+                            <p class="text-gray-600 leading-relaxed">Kontrak pintar ialah bentuk kontrak digital algoritma automatik di mana pihak boleh menukar aset tanpa sebarang perantara berdasarkan peraturan yang ditetapkan. Kontrak ini terdesentralisasi, teragih, dan telus sepenuhnya kepada pihak yang terlibat.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Bagaimana Ia Berfungsi?</h3>
+                            <p class="text-gray-600 leading-relaxed">Kontrak pintar menggunakan teknologi blockchain untuk berfungsi. Program di dalam kontrak pintar akan berjalan sendiri berdasarkan syarat-syarat yang telah ditetapkan oleh pihak-pihak terlibat.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Kelebihan Smart Contract</h3>
+                            <ul class="list-disc list-inside space-y-3 mt-4 text-gray-600 leading-relaxed">
+                                <li><strong>Autonomi & Tanpa Perantara:</strong> Proses berjalan tanpa memerlukan pihak ketiga.</li>
+                                <li><strong>Sangat Pantas & Selamat:</strong> Oleh kerana ia berjalan di atas kod pengaturcaraan, kelajuan pelaksanaannya lebih tinggi dan selamat secara kriptografi.</li>
+                                <li><strong>Tepat & Cekap Kos:</strong> Terma dan syarat kontrak direkodkan dengan tepat, mengurangkan kos berbanding kontrak tradisional.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Smart contract berfungsi seperti **mesin layan diri (vending machine)**. Anda masukkan duit (syarat dipenuhi), dan mesin secara automatik akan mengeluarkan air tin (tindakan dilaksanakan). Semuanya berlaku secara automatik mengikut peraturan yang ditetapkan, tanpa perlu ada jurujual.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M6.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                                <img src="peta minda/M6.svg" alt="Peta Minda Modul 6" class="max-h-full max-w-full object-contain">
+                            </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M6.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M6.svg" download="M6.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
+                                <a href="peta minda/M6.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M6.svg" download="M6_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div id="modul7" class="main-content">
+                <div id="modul7" class="main-content" role="tabpanel" aria-labelledby="modul7-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 7: Cryptocurrency & Dompet Digital</h2>
                     <div class="space-y-8 mt-4">
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Apakah itu Cryptocurrency?</h3>
+                            <p class="text-gray-600 leading-relaxed">Cryptocurrency bermaksud mata wang digital yang direka untuk tujuan menukar maklumat digital. Ia adalah medium pertukaran seperti mata wang biasa. Bitcoin, yang dicipta pada 2009, adalah contoh paling popular.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">E-Wallet (Dompet Digital)</h3>
+                            <p class="text-gray-600 leading-relaxed">Dompet digital menyimpan kunci awam dan peribadi anda. Kunci-kunci ini digunakan untuk menghantar dan menerima mata wang kripto. Dompet ini tidak menyimpan mata wang itu sendiri.</p>
+                        </div>
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">MetaMask</h3>
+                            <p class="text-gray-600 leading-relaxed">MetaMask ialah dompet Ether yang berfungsi sebagai sambungan pada pelayar Chrome, Firefox, dan Opera. Ia bertindak seperti "jambatan" atau "light-client" yang menghubungkan pelayar anda ke rangkaian blockchain tanpa memerlukan nod geth penuh.</p>
+                        </div>
+
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Cryptocurrency adalah seperti **token di arked permainan**, manakala E-wallet pula adalah seperti **kantung khas** untuk menyimpan token tersebut. Anda guna token (crypto) untuk bermain (bertransaksi), dan kantung (e-wallet) itu memastikan hanya anda yang boleh akses token anda.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <embed type="image/svg+xml" src="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M7.svg" class="w-full h-auto rounded-lg shadow-md mt-2" style="min-height: 500px;" />
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
+                                <img src="peta minda/M7.svg" alt="Peta Minda Modul 7" class="max-h-full max-w-full object-contain">
+                            </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M7.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center">Zoom</a>
-                                <a href="https://Samil-Mey.github.io/Blokchain_Intan2025/peta%20minda/M7.svg" download="M7.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center">Muat Turun</a>
+                                <a href="peta minda/M7.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M7.svg" download="M7_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
                     </div>
@@ -221,43 +418,93 @@
     </div>
 
     <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        const contentPanes = document.querySelectorAll('.main-content');
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+        document.addEventListener("DOMContentLoaded", function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const contentPanes = document.querySelectorAll('.main-content');
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
 
-        function openTab(evt, tabName) {
-            evt.preventDefault();
-            
-            contentPanes.forEach(pane => {
-                pane.classList.remove('active');
-            });
+            function openTab(tabName) {
+                // Hide all content panes and mark them as hidden for ARIA
+                contentPanes.forEach(pane => {
+                    pane.classList.remove('active');
+                    pane.setAttribute('aria-hidden', 'true');
+                });
 
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-            });
+                // Remove active class from all nav links and mark them as not selected for ARIA
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    link.setAttribute('aria-selected', 'false');
+                    link.removeAttribute('tabindex'); // Make non-active tabs not focusable by default
+                });
 
-            document.getElementById(tabName).classList.add('active');
+                // Show the selected content pane and mark it as visible for ARIA
+                const selectedPane = document.getElementById(tabName);
+                if (selectedPane) {
+                    selectedPane.classList.add('active');
+                    selectedPane.setAttribute('aria-hidden', 'false');
+                }
 
-            document.querySelectorAll('.nav-link').forEach(link => {
-                if (link.getAttribute('onclick').includes(`'${tabName}'`)) {
+                // Add active class to corresponding nav links (both sidebar and mobile) and mark as selected
+                document.querySelectorAll(`[data-tab="${tabName}"]`).forEach(link => {
                     link.classList.add('active');
+                    link.setAttribute('aria-selected', 'true');
+                    link.setAttribute('tabindex', '0'); // Make active tab focusable
+                });
+                
+                // Update URL hash for deep linking
+                // Use replaceState to avoid cluttering browser history with every tab click
+                if (history.replaceState) {
+                    history.replaceState(null, null, `#${tabName}`);
+                } else {
+                    location.hash = tabName;
+                }
+
+                // If on mobile, close the menu after selection
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                }
+            }
+
+            // Add event listeners to navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(evt) {
+                    evt.preventDefault();
+                    const tabName = this.getAttribute('data-tab');
+                    openTab(tabName);
+                });
+            });
+
+            // Mobile menu toggle
+            menuBtn.addEventListener('click', () => {
+                const isExpanded = mobileMenu.classList.contains('hidden');
+                mobileMenu.classList.toggle('hidden');
+                menuBtn.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Handle browser back/forward buttons (hashchange event)
+            window.addEventListener('hashchange', function() {
+                const tabNameFromHash = window.location.hash ? window.location.hash.substring(1) : 'modul1';
+                // Only open tab if it's a valid tab name and not already active
+                const currentActiveTab = document.querySelector('.main-content.active');
+                if (document.getElementById(tabNameFromHash) && (!currentActiveTab || currentActiveTab.id !== tabNameFromHash)) {
+                    openTab(tabNameFromHash);
+                } else if (!document.getElementById(tabNameFromHash) && initialTab !== 'modul1') {
+                    // If an invalid hash is present, and it's not the initial load, default to modul1
+                    openTab('modul1');
                 }
             });
-            
-            if (!mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
+
+            // Automatically open the first tab on page load or based on URL hash
+            const initialTab = window.location.hash ? window.location.hash.substring(1) : 'modul1';
+            // Check if the initialTab exists, otherwise default to 'modul1'
+            if (document.getElementById(initialTab)) {
+                openTab(initialTab);
+            } else {
+                openTab('modul1');
             }
-        }
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelector('.nav-link').click();
         });
     </script>
 </body>
 </html>
-```
