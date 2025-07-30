@@ -13,6 +13,47 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6; /* Latar belakang kelabu lembut */
         }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .analogy {
+            font-style: italic;
+            color: #555;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        strong {
+            color: #003366;
+        }
+        .glossary-item {
+            margin-bottom: 8px;
+        }
+        .glossary-item strong {
+            display: inline-block;
+            width: 80px; /* Adjust as needed for alignment */
+            margin-right: 5px;
+        }
+        /* Existing styles from the original code */
         .main-content {
             display: none;
             animation: fadeIn 0.5s ease-in-out;
@@ -64,22 +105,6 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
-        /* Styles for analogy and glossary, if not already handled by Tailwind */
-        .analogy {
-            font-style: italic;
-            color: #555;
-            border-left: 3px solid #ccc;
-            padding-left: 10px;
-            margin-top: 10px;
-        }
-        .glossary-item {
-            margin-bottom: 8px;
-        }
-        .glossary-item strong {
-            display: inline-block;
-            width: 80px; /* Adjust as needed for alignment */
-            margin-right: 5px;
-        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -93,6 +118,11 @@
                 <h1 class="text-xl font-bold tracking-wider">MODUL</h1>
             </div>
             <nav class="flex-1 px-4 py-6 space-y-2" role="tablist">
+                <!-- NEW HOME TAB -->
+                <a href="#home" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="home" role="tab" id="home-tab" aria-controls="home">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" /></svg>
+                    Laman Utama
+                </a>
                 <a href="#modul1" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul1" role="tab" id="modul1-tab" aria-controls="modul1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" /></svg>
                     M1: Pengenalan
@@ -126,8 +156,13 @@
                     M8: Sinergi Digital
                 </a>
                 <a href="#modul9" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul9" role="tab" id="modul9-tab" aria-controls="modul9">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" /></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path d="M4 12a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H4zM14 12a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2h-2zM4 2a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V4a2 2 0 00-2-2H4zM14 2a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V4a2 2 0 00-2-2h-2z" /></svg>
                     M9: Aplikasi Terdesentralisasi (DApp)
+                </a>
+                <!-- NEW MATERIALS TAB -->
+                <a href="#bahan-kursus" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="bahan-kursus" role="tab" id="bahan-kursus-tab" aria-controls="bahan-kursus">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" /></svg>
+                    Bahan Kursus
                 </a>
             </nav>
         </aside>
@@ -151,6 +186,8 @@
             
             <div id="mobile-menu" class="lg:hidden hidden bg-white shadow-md">
                 <nav class="flex flex-col p-4 space-y-1" role="tablist">
+                    <!-- MOBILE HOME TAB -->
+                    <a href="#home" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="home" role="tab" id="home-mobile-tab" aria-controls="home">Laman Utama</a>
                     <a href="#modul1" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul1" role="tab" id="modul1-mobile-tab" aria-controls="modul1">M1: Pengenalan</a>
                     <a href="#modul2" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul2" role="tab" id="modul2-mobile-tab" aria-controls="modul2">M2: Komponen</a>
                     <a href="#modul3" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul3" role="tab" id="modul3-mobile-tab" aria-controls="modul3">M3: Generasi</a>
@@ -160,11 +197,34 @@
                     <a href="#modul7" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul7" role="tab" id="modul7-mobile-tab" aria-controls="modul7">M7: Crypto</a>
                     <a href="#modul8" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul8" role="tab" id="modul8-mobile-tab" aria-controls="modul8">M8: Sinergi Digital</a>
                     <a href="#modul9" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul9" role="tab" id="modul9-mobile-tab" aria-controls="modul9">M9: Aplikasi Terdesentralisasi (DApp)</a>
+                    <!-- MOBILE MATERIALS TAB -->
+                    <a href="#bahan-kursus" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="bahan-kursus" role="tab" id="bahan-kursus-mobile-tab" aria-controls="bahan-kursus">Bahan Kursus</a>
                 </nav>
             </div>
 
             <main class="flex-1 p-6 md:p-10 overflow-y-auto">
                 
+                <!-- NEW HOME CONTENT -->
+                <div id="home" class="main-content" role="tabpanel" aria-labelledby="home-tab">
+                    <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Pengenalan Kursus</h2>
+                    <div class="space-y-8 mt-4">
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Selamat Datang ke Kursus IR4.0: Foundations of Blockchain! 👋</h3>
+                            <p class="text-gray-600 leading-relaxed">
+                                Selami dunia blockchain yang merevolusikan! 🌐 Kursus ini akan membongkar **konsep asas** teknologi blockchain, dari cara ia berfungsi hingga evolusi generasinya dan pelbagai jenis rangkaian. Anda akan didedahkan dengan **kajian kes sebenar** aplikasi blockchain dalam perkhidmatan awam.
+                            </p>
+                            <p class="text-gray-600 leading-relaxed mt-4">
+                                Bersedia untuk **aktiviti 'hands-on'** yang menarik untuk membina pemahaman mendalam tentang pembangunan e-wallet dan Metamask. Jadilah sebahagian daripada masa depan digital! 🚀
+                            </p>
+                            <p class="text-gray-600 leading-relaxed mt-4">
+                                🗓️ <strong>Tarikh:</strong> 28-30 Julai 2025<br>
+                                ⏰ <strong>Masa:</strong> 8.30 Pagi - 4.30 Petang<br>
+                                📍 <strong>Tempat:</strong> Makmal ICT 3, IMATEC, INTAN Bukit Kiara
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
                 <div id="modul1" class="main-content" role="tabpanel" aria-labelledby="modul1-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 1: Pengenalan kepada Blockchain</h2>
                     <div class="space-y-8 mt-4">
@@ -342,12 +402,12 @@
                     </div>
                     
                     <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg mt-8">
-                        <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
-                            Analogi Ringkas
-                        </h3>
-                        <p class="text-indigo-700 leading-relaxed">Ia seperti jenis-jenis **kelab sosial**. Ada kelab yang seperti **taman awam** (Public), sesiapa pun boleh masuk. Ada yang **kelab eksklusif** (Private), hanya untuk ahli berjemputan. Ada juga kelab yang merupakan **kerjasama beberapa syarikat** (Consortium).</p>
-                    </div>
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                Analogi Ringkas
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Ia seperti jenis-jenis **kelab sosial**. Ada kelab yang seperti **taman awam** (Public), sesiapa pun boleh masuk. Ada yang **kelab eksklusif** (Private), hanya untuk ahli berjemputan. Ada juga kelab yang merupakan **kerjasama beberapa syarikat** (Consortium).</p>
+                        </div>
 
                     <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg mt-8">
                         <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
@@ -439,6 +499,7 @@
                     </div>
                 </div>
 
+                <!-- Modul 8: Sinergi Digital -->
                 <div id="modul8" class="main-content" role="tabpanel" aria-labelledby="modul8-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 8: Sinergi Digital (Blockchain, IoT, AI & Smart Contracts)</h2>
                     <div class="space-y-8 mt-4">
@@ -481,6 +542,7 @@
                             </ul>
                             <p class="text-indigo-700 leading-relaxed mt-4">Kesimpulannya, sistem ini menjadikan seluruh proses penyampaian barang menjadi sangat efisien, telus, dan boleh dipercayai tanpa memerlukan banyak campur tangan manusia.</p>
                         </div>
+                        <!-- Peta Minda Modul 8 -->
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
                             <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
@@ -494,6 +556,7 @@
                     </div>
                 </div>
 
+                <!-- Modul 9: Aplikasi Terdesentralisasi (DApp) -->
                 <div id="modul9" class="main-content" role="tabpanel" aria-labelledby="modul9-tab">
                     <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 9: Aplikasi Terdesentralisasi (DApp)</h2>
                     <div class="space-y-8 mt-4">
@@ -596,9 +659,10 @@
                             <p class="text-indigo-700 leading-relaxed mt-4">Kesimpulannya, Kampung Baru (DApp) ini adalah **lebih adil, telus, selamat, dan berkuasa** kerana ia dimiliki dan diuruskan bersama oleh semua penduduknya, bukan oleh satu pihak pusat.</p>
                         </div>
                         
+                        <!-- Peta Minda Modul 9 -->
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
-                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center text-gray-500">
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center overflow-hidden">
                                 <img src="peta minda/M9.svg" alt="Peta Minda Modul 9" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
@@ -607,6 +671,7 @@
                             </div>
                         </div>
 
+                        <!-- Glosari Modul 9 -->
                         <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
                             <h3 class="text-2xl font-bold mb-4 text-gray-700">Glosari Ringkas</h3>
                             <div class="space-y-2 text-gray-600 leading-relaxed">
@@ -626,9 +691,34 @@
                     </div>
                 </div>
 
+                <!-- NEW BAHAN KURSUS TAB -->
+                <div id="bahan-kursus" class="main-content" role="tabpanel" aria-labelledby="bahan-kursus-tab">
+                    <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Bahan Kursus</h2>
+                    <div class="space-y-4 mt-4">
+                        <p class="text-gray-600 leading-relaxed mb-4">Sila klik butang di bawah untuk memuat turun atau melihat bahan kursus bagi setiap modul:</p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <!-- Placeholder buttons for Modules 1-9 -->
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 1</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 2</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 3</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 4</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 5</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 6</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 7</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 8</a>
+                            <a href="#" class="block bg-indigo-600 text-white py-4 px-6 rounded-lg text-center font-semibold hover:bg-indigo-700 transition shadow-md hover:shadow-lg">Modul 9</a>
+                        </div>
+                    </div>
+                </div>
+
             </main>
         </div>
     </div>
+
+    <footer class="bg-gray-800 text-white text-center py-3 text-sm">
+        <p class="text-red-400 mb-1">Segala kandungan dalam laman ini adalah hasil pembelajaran dari Kursus IR4.0: Foundations of Blockchain yang dianjurkan oleh INTAN.</p>
+        <p class="text-gray-400">~A.Shamil© || 2025~</p>
+    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -698,24 +788,24 @@
 
             // Handle browser back/forward buttons (hashchange event)
             window.addEventListener('hashchange', function() {
-                const tabNameFromHash = window.location.hash ? window.location.hash.substring(1) : 'modul1';
+                const tabNameFromHash = window.location.hash ? window.location.hash.substring(1) : 'home';
                 // Only open tab if it's a valid tab name and not already active
                 const currentActiveTab = document.querySelector('.main-content.active');
                 if (document.getElementById(tabNameFromHash) && (!currentActiveTab || currentActiveTab.id !== tabNameFromHash)) {
                     openTab(tabNameFromHash);
-                } else if (!document.getElementById(tabNameFromHash) && initialTab !== 'modul1') {
-                    // If an invalid hash is present, and it's not the initial load, default to modul1
-                    openTab('modul1');
+                } else if (!document.getElementById(tabNameFromHash) && initialTab !== 'home') {
+                    // If an invalid hash is present, and it's not the initial load, default to home
+                    openTab('home');
                 }
             });
 
             // Automatically open the first tab on page load or based on URL hash
-            const initialTab = window.location.hash ? window.location.hash.substring(1) : 'modul1';
-            // Check if the initialTab exists, otherwise default to 'modul1'
+            const initialTab = window.location.hash ? window.location.hash.substring(1) : 'home';
+            // Check if the initialTab exists, otherwise default to 'home'
             if (document.getElementById(initialTab)) {
                 openTab(initialTab);
             } else {
-                openTab('modul1');
+                openTab('home');
             }
         });
     </script>
