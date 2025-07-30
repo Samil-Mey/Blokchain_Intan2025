@@ -715,6 +715,20 @@
         </div>
     </div>
 
+    <!-- Custom Modal for Security Key -->
+    <div id="securityModal" class="fixed inset-0 bg-gray-900 bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-xl max-w-sm w-full mx-4">
+            <h3 class="text-xl font-bold mb-4 text-gray-800">Masukkan Kunci Keselamatan</h3>
+            <p class="text-gray-600 mb-4">Masukkan kunci keselamatan untuk bahan kursus INTAN.</p>
+            <input type="password" id="securityPinInput" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 mb-4" placeholder="Kunci Keselamatan">
+            <p id="securityError" class="text-red-500 text-sm mb-4 hidden">Kunci keselamatan salah. Sila cuba lagi.</p>
+            <div class="flex justify-end space-x-3">
+                <button id="cancelSecurityBtn" class="px-5 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Batal</button>
+                <button id="submitSecurityBtn" class="px-5 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition">Hantar</button>
+            </div>
+        </div>
+    </div>
+
     <footer class="bg-gray-800 text-white text-center py-3 text-sm">
         <p class="text-red-400 mb-1">Segala kandungan dalam laman ini adalah hasil pembelajaran dari Kursus IR4.0: Foundations of Blockchain yang dianjurkan oleh INTAN.</p>
         <p class="text-gray-400">~A.Shamil© || 2025~</p>
@@ -726,6 +740,16 @@
             const contentPanes = document.querySelectorAll('.main-content');
             const menuBtn = document.getElementById('menu-btn');
             const mobileMenu = document.getElementById('mobile-menu');
+
+            // Get modal elements
+            const securityModal = document.getElementById('securityModal');
+            const securityPinInput = document.getElementById('securityPinInput');
+            const securityError = document.getElementById('securityError');
+            const cancelSecurityBtn = document.getElementById('cancelSecurityBtn');
+            const submitSecurityBtn = document.getElementById('submitSecurityBtn');
+
+            // Variable to store the target tab after successful PIN entry
+            let pendingSecureTab = null;
 
             function openTab(tabName) {
                 // Hide all content panes and mark them as hidden for ARIA
@@ -756,7 +780,6 @@
                 });
                 
                 // Update URL hash for deep linking
-                // Use replaceState to avoid cluttering browser history with every tab click
                 if (history.replaceState) {
                     history.replaceState(null, null, `#${tabName}`);
                 } else {
@@ -770,13 +793,54 @@
                 }
             }
 
-            // Add event listeners to navigation links
+            // Event listeners for navigation links
             navLinks.forEach(link => {
                 link.addEventListener('click', function(evt) {
                     evt.preventDefault();
                     const tabName = this.getAttribute('data-tab');
-                    openTab(tabName);
+
+                    if (tabName === 'bahan-kursus') {
+                        pendingSecureTab = tabName; // Store target tab
+                        securityModal.classList.remove('hidden'); // Show the modal
+                        securityPinInput.value = ''; // Clear previous input
+                        securityError.classList.add('hidden'); // Hide any previous error
+                        securityPinInput.focus(); // Focus on the input field
+                    } else {
+                        openTab(tabName); // Open other tabs directly
+                    }
                 });
+            });
+
+            // Event listener for security modal submission
+            submitSecurityBtn.addEventListener('click', () => {
+                const enteredPin = securityPinInput.value;
+                if (enteredPin === "INTAN") {
+                    securityModal.classList.add('hidden'); // Hide the modal
+                    if (pendingSecureTab) {
+                        openTab(pendingSecureTab); // Open the stored secure tab
+                        pendingSecureTab = null; // Reset
+                    }
+                } else {
+                    securityError.classList.remove('hidden'); // Show error message
+                    securityPinInput.value = ''; // Clear input
+                    securityPinInput.focus(); // Re-focus
+                    securityModal.classList.add('hidden'); // Hide modal after incorrect attempt
+                    openTab('home'); // Redirect to home
+                }
+            });
+
+            // Event listener for security modal cancellation
+            cancelSecurityBtn.addEventListener('click', () => {
+                securityModal.classList.add('hidden'); // Hide the modal
+                pendingSecureTab = null; // Clear pending tab
+                openTab('home'); // Redirect to home on cancel
+            });
+
+            // Allow pressing Enter key to submit PIN
+            securityPinInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    submitSecurityBtn.click(); // Simulate button click
+                }
             });
 
             // Mobile menu toggle
@@ -789,22 +853,27 @@
             // Handle browser back/forward buttons (hashchange event)
             window.addEventListener('hashchange', function() {
                 const tabNameFromHash = window.location.hash ? window.location.hash.substring(1) : 'home';
-                // Only open tab if it's a valid tab name and not already active
-                const currentActiveTab = document.querySelector('.main-content.active');
-                if (document.getElementById(tabNameFromHash) && (!currentActiveTab || currentActiveTab.id !== tabNameFromHash)) {
+                // If the hash is 'bahan-kursus', trigger the security prompt via click simulation
+                if (tabNameFromHash === 'bahan-kursus') {
+                    const bahanKursusLink = document.querySelector('[data-tab="bahan-kursus"]');
+                    if (bahanKursusLink) {
+                        bahanKursusLink.click(); // Simulate click to trigger security check
+                    } else {
+                        openTab('home'); // Fallback if link not found
+                    }
+                } else {
                     openTab(tabNameFromHash);
-                } else if (!document.getElementById(tabNameFromHash) && initialTab !== 'home') {
-                    // If an invalid hash is present, and it's not the initial load, default to home
-                    openTab('home');
                 }
             });
 
             // Automatically open the first tab on page load or based on URL hash
             const initialTab = window.location.hash ? window.location.hash.substring(1) : 'home';
-            // Check if the initialTab exists, otherwise default to 'home'
-            if (document.getElementById(initialTab)) {
-                openTab(initialTab);
+            // Trigger a click event for the initial tab to ensure security check for 'bahan-kursus'
+            const initialNavLink = document.querySelector(`[data-tab="${initialTab}"]`);
+            if (initialNavLink) {
+                initialNavLink.click();
             } else {
+                // Fallback if initial hash is invalid or no link found
                 openTab('home');
             }
         });
