@@ -11,8 +11,54 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f3f4f6; /* Latar belakang kelabu lembut */
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+            background-color: #f4f4f4;
         }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .analogy {
+            font-style: italic;
+            color: #555;
+            border-left: 3px solid #ccc;
+            padding-left: 10px;
+            margin-top: 10px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        ol {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+        strong {
+            color: #003366;
+        }
+        .glossary-item {
+            margin-bottom: 8px;
+        }
+        .glossary-item strong {
+            display: inline-block;
+            width: 80px; /* Adjust as needed for alignment */
+            margin-right: 5px;
+        }
+        /* Existing styles from the original code */
         .main-content {
             display: none;
             animation: fadeIn 0.5s ease-in-out;
@@ -109,6 +155,10 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" /></svg>
                     M8: Sinergi Digital
                 </a>
+                <a href="#modul9" class="nav-link flex items-center py-3 px-4 rounded-lg" data-tab="modul9" role="tab" id="modul9-tab" aria-controls="modul9">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd" /></svg>
+                    M9: Aplikasi Terdesentralisasi (DApp)
+                </a>
             </nav>
         </aside>
 
@@ -139,6 +189,7 @@
                     <a href="#modul6" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul6" role="tab" id="modul6-mobile-tab" aria-controls="modul6">M6: Smart Contract</a>
                     <a href="#modul7" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul7" role="tab" id="modul7-mobile-tab" aria-controls="modul7">M7: Crypto</a>
                     <a href="#modul8" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul8" role="tab" id="modul8-mobile-tab" aria-controls="modul8">M8: Sinergi Digital</a>
+                    <a href="#modul9" class="nav-link flex items-center py-2 px-3 rounded-md" data-tab="modul9" role="tab" id="modul9-mobile-tab" aria-controls="modul9">M9: Aplikasi Terdesentralisasi (DApp)</a>
                 </nav>
             </div>
 
@@ -181,7 +232,7 @@
                                 <img src="peta minda/M1.svg" alt="Peta Minda Modul 1" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="peta minda/M1.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M1.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                                 <a href="peta minda/M1.svg" download="M1_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
@@ -218,7 +269,7 @@
                                 <img src="peta minda/M2.svg" alt="Peta Minda Modul 2" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="peta minda/M2.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M2.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                                 <a href="peta minda/M2.svg" download="M2_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
@@ -259,7 +310,7 @@
                                 <img src="peta minda/M3.svg" alt="Peta Minda Modul 3" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="peta minda/M3.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M3.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                                 <a href="peta minda/M3.svg" download="M3_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
@@ -292,7 +343,7 @@
                                 <img src="peta minda/M4.svg" alt="Peta Minda Modul 4" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="peta minda/M4.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M4.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                                 <a href="peta minda/M4.svg" download="M4_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
@@ -334,7 +385,7 @@
                             <img src="peta minda/M5.svg" alt="Peta Minda Modul 5" class="max-h-full max-w-full object-contain">
                         </div>
                         <div class="mt-6 flex justify-end space-x-3">
-                            <a href="peta minda/M5.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                            <a href="peta minda/M5.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                             <a href="peta minda/M5.svg" download="M5_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                         </div>
                     </div>
@@ -374,7 +425,7 @@
                                 <img src="peta minda/M6.svg" alt="Peta Minda Modul 6" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="peta minda/M6.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M6.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                                 <a href="peta minda/M6.svg" download="M6_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
@@ -411,7 +462,7 @@
                                 <img src="peta minda/M7.svg" alt="Peta Minda Modul 7" class="max-h-full max-w-full object-contain">
                             </div>
                             <div class="mt-6 flex justify-end space-x-3">
-                                <a href="peta minda/M7.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zoom</a>
+                                <a href="peta minda/M7.svg" target="_blank" class="no-underline text-sm bg-indigo-600 text-white py-2 px-4 rounded-lg hover:bg-indigo-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>Zum</a>
                                 <a href="peta minda/M7.svg" download="M7_peta_minda.svg" class="no-underline text-sm bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition shadow-md hover:shadow-lg flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" /></svg>Muat Turun</a>
                             </div>
                         </div>
@@ -466,6 +517,134 @@
                                 <p>Peta Minda untuk Modul ini akan datang tidak lama lagi.</p>
                             </div>
                             </div>
+                    </div>
+                </div>
+
+                <div id="modul9" class="main-content" role="tabpanel" aria-labelledby="modul9-tab">
+                    <h2 class="text-3xl font-extrabold mb-6 text-gray-800 border-b-4 border-indigo-500 pb-2 inline-block">Modul 9: Aplikasi Terdesentralisasi (DApp)</h2>
+                    <div class="space-y-8 mt-4">
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">APA?</h3>
+                            <p class="text-gray-600 leading-relaxed">DApp adalah aplikasi yang berjalan di atas rangkaian terdesentralisasi (biasanya blockchain), di mana data dan logiknya diedarkan merentasi banyak komputer (node) dan tidak ada satu titik kegagalan pusat. Ini bermakna ia "tidak boleh dimatikan" atau "unkillable".</p>
+                            <p class="text-gray-600 leading-relaxed mt-2">Perbezaan DApp vs. Smart Contract:</p>
+                            <ul class="list-disc list-inside space-y-2 mt-2 text-gray-600 leading-relaxed">
+                                <li><strong>DApp</strong> adalah aplikasi penuh, termasuk antaramuka pengguna (front-end) dan sebarang kod bukan-blockchain yang lain, selain daripada kontrak pintar itu sendiri.</li>
+                                <li><strong>Smart Contract</strong> hanyalah bahagian aplikasi yang benar-benar berinteraksi dengan blockchain.</li>
+                            </ul>
+                            <p class="analogy">Analogi: DApp ibarat *seluruh bangunan aplikasi (kedai, pejabat, dsb.)*, manakala Smart Contract hanyalah *bilik kebal yang menyimpan peraturan penting dan aset berharga* di dalam bangunan itu.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">BAGAIMANA?</h3>
+                            <h4 class="text-xl font-semibold mb-2 text-gray-700">DApp vs. Aplikasi Terpusat (Web 2.0):</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li><strong>Aplikasi Terpusat (Web 2.0):</strong> Antaramuka pengguna dihidangkan dari satu pelayan (server) yang dikawal oleh satu syarikat atau pembangun. Semua permintaan dan data mengalir ke satu pangkalan data yang dikawal oleh entiti tunggal ini.
+                                    <p class="analogy mt-1">Analogi: Web 2.0 seperti *restoran makanan segera yang dikendalikan oleh satu syarikat besar*. Semua pesanan anda (permintaan) pergi ke pelayan pusat mereka, dan semua data anda disimpan dalam satu pangkalan data mereka. Jika pelayan itu rosak atau syarikat itu membuat peraturan baharu, ia menjejaskan semua orang. Data anda juga "dipegang" oleh syarikat ini.</p>
+                                </li>
+                                <li><strong>DApp (Web 3.0):</strong> Antaramuka pengguna (HTML/CSS/JS) masih diperlukan, mungkin dihoskan di awan atau rangkaian P2P. Antaramuka ini berkomunikasi dengan Smart Contract melalui API (melalui dompet digital pengguna). Smart Contract menjalankan kod dan menyimpan data di rangkaian blockchain.
+                                    <p class="analogy mt-1">Analogi: Web 3.0 seperti *restoran koperatif yang dimiliki bersama oleh semua pelanggan dan pekerja*. Setiap "nod" dalam rangkaian adalah seperti *pekerja yang menyimpan salinan penuh semua resipi (kontrak pintar) dan rekod jualan (data blockchain)*. Apabila anda membuat pesanan, semua pekerja mengesahkannya, memastikan ia telus dan tidak ada sesiapa yang boleh menipu atau mengubah rekod. Data anda "adalah data anda".</p>
+                                </li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold mb-2 mt-6 text-gray-700">Ciri Utama Rangkaian DApp (Blockchain):</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li>Setiap nod (komputer) dalam rangkaian menjalankan Smart Contract dan menyimpan semua data Blockchain.</li>
+                                <li>Nod-nod ini bersetuju tentang hasil yang akan dikembalikan kepada antaramuka pengguna, menjamin desentralisasi.</li>
+                            </ul>
+
+                            <h4 class="text-xl font-semibold mb-2 mt-6 text-gray-700">Interaksi DApp Memerlukan Kebenaran:</h4>
+                            <p class="text-gray-600 leading-relaxed">Kerana pengguna mengawal data mereka (yang termasuk wang, identiti, dll.), kita perlu meminta kebenaran mereka sebelum mengakses atau mengubahnya. Contohnya, dalam pasaran DApp, setiap pihak perlu menandatangani transaksi untuk melengkapkan perdagangan.</p>
+
+                            <h4 class="text-xl font-semibold mb-2 mt-6 text-gray-700">Membangunkan DApp:</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li><strong>Front-End:</strong> Bina antaramuka web biasa (HTML/CSS/JS) dengan JavaScript khusus aplikasi.</li>
+                                <li><strong>Library:</strong> Tambah kod yang membenarkan front-end berhubung dengan dompet pengguna dan rangkaian blockchain.</li>
+                                <li><strong>Smart Contract:</strong> Tulis kontrak pintar yang melaksanakan fungsi teras aplikasi dan menguruskan "kandungan" dompet pengguna. Kontrak ini kemudian "diserah (deploy)" ke blockchain.</li>
+                                <li><strong>Perhatian Pembangun:</strong> Fokus pada penulisan Smart Contract yang selamat, memastikan JavaScript front-end dapat berkomunikasi dengan betul melalui antara muka kontrak pintar, dan mereka bentuk aliran pengguna yang mudah digunakan.</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold mb-2 mt-6 text-gray-700">Smart Contracts Boleh Berinteraksi:</h4>
+                            <p class="text-gray-600 leading-relaxed">Smart Contracts boleh berkomunikasi antara satu sama lain.</p>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">KELEBIHAN?</h3>
+                            <h4 class="text-xl font-semibold mb-2 text-gray-700">DApp (Terdesentralisasi):</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li><strong>Tiada Penapisan (No Censorship):</strong> Tiada pihak tunggal boleh menyensor atau mengawal akses kepada aplikasi atau data.</li>
+                                <li><strong>Tiada Risiko Platform (No Platform Risk):</strong> Tidak bergantung pada satu platform yang boleh dihentikan atau menukar peraturannya secara unilateral.</li>
+                                <li><strong>Ketelusan (Transparency):</strong> Semua transaksi dan data boleh disemak oleh sesiapa sahaja di rangkaian (jika ia awam).</li>
+                                <li><strong>Kawalan Pengguna:</strong> Pengguna mempunyai lebih kawalan ke atas data dan aset mereka.</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold mb-2 mt-6 text-gray-700">Aplikasi Terpusat (Web 2.0):</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li><strong>Kawalan Pengalaman:</strong> Syarikat mempunyai kawalan penuh terhadap pengalaman pengguna.</li>
+                                <li><strong>Model Perniagaan Jelas:</strong> Model perniagaan yang telah terbukti dan jelas.</li>
+                                <li><strong>Kos (potensi lebih rendah):</strong> Mungkin lebih murah untuk dibina dan diurus dalam skala kecil.</li>
+                                <li><strong>Kelajuan:</strong> Lebih cepat dalam pelaksanaan.</li>
+                                <li><strong>Iterasi:</strong> Lebih mudah untuk membuat perubahan dan mengulangi pembangunan.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">KEKURANGAN?</h3>
+                            <h4 class="text-xl font-semibold mb-2 text-gray-700">DApp (Terdesentralisasi):</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li><strong>Kos:</strong> Mungkin lebih mahal untuk beroperasi.</li>
+                                <li><strong>Masa (Kelajuan):</strong> Lebih perlahan berbanding aplikasi terpusat.</li>
+                                <li><strong>Privasi (Bergantung jenis):</strong> Sesetengah DApp awam mungkin kurang privasi kerana semua data terbuka.</li>
+                                <li><strong>Perkhidmatan (Kompleksiti):</strong> Mungkin lebih kompleks untuk membangunkan atau menawarkan perkhidmatan tertentu.</li>
+                            </ul>
+                            <h4 class="text-xl font-semibold mb-2 mt-6 text-gray-700">Aplikasi Terpusat (Web 2.0):</h4>
+                            <ul class="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+                                <li><strong>Penapisan:</strong> Boleh disensor secara sengaja atau tidak sengaja.</li>
+                                <li><strong>Jualan Data:</strong> Data pengguna boleh dijual.</li>
+                                <li><strong>Penggodaman (Hacking):</strong> Satu titik kegagalan pusat menjadikannya sasaran utama untuk penggodaman.</li>
+                            </ul>
+                        </div>
+
+                        <div class="card bg-indigo-50 border-l-4 border-indigo-500 p-6 rounded-xl shadow-lg">
+                            <h3 class="text-xl font-bold mb-3 text-indigo-800 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.657 7.343A8 8 0 0117.657 18.657z" /><path stroke-linecap="round" stroke-linejoin="round" d="M9.879 16.121A3 3 0 1014.12 11.88l-4.242 4.242z" /></svg>
+                                ANALOGI KESELURUHAN (Demokrasi Kampung Digital)
+                            </h3>
+                            <p class="text-indigo-700 leading-relaxed">Bayangkan ada sebuah **kampung digital** di mana orang ramai berdagang barang dan menjalankan aktiviti.</p>
+                            <ul class="list-disc list-inside space-y-3 mt-4 text-indigo-700 leading-relaxed">
+                                <li><strong>Web 2.0 (Kampung Lama):</strong> Kampung ini mempunyai *satu ketua kampung dan satu pejabat rekod pusat*. Semua urusan (jual beli, daftar nama) mesti melalui pejabat ini. Ketua kampung boleh membuat atau membatalkan peraturan, menjual maklumat penduduk kepada orang luar, dan jika pejabat rekod terbakar, semua rekod hilang. Penduduk tidak sepenuhnya mengawal harta atau maklumat mereka.</li>
+                                <li><strong>DApp / Web 3.0 (Kampung Baru):</strong> Kampung ini tidak ada ketua kampung tunggal. Sebaliknya, setiap penduduk mempunyai *salinan sendiri buku rekod utama (Blockchain)* yang mencatat setiap urusan yang sah.
+                                    <ul class="list-circle list-inside ml-5 mt-2">
+                                        <li><strong>IoT</strong> adalah seperti *mata dan telinga setiap penduduk* yang melihat apa yang berlaku (contoh: "Pak Ali serahkan barang kepada Mak Limah").</li>
+                                        <li><strong>Blockchain</strong> adalah *buku rekod yang dikongsi oleh semua penduduk*. Setiap kali ada urusan, semua orang mencatatnya dalam buku mereka. Kerana semua orang ada salinan dan ia tidak boleh diubah, tiada siapa boleh menipu atau memadam rekod.</li>
+                                        <li><strong>Smart Contracts</strong> adalah seperti *perjanjian automatik yang termaktub dalam buku rekod*. Contohnya, "Jika Pak Ali serahkan barang, Mak Limah secara automatik akan bayar". Perjanjian ini akan terlaksana sendiri apabila syarat dipenuhi, tanpa perlu orang tengah.</li>
+                                        <li><strong>AI</strong> adalah *pembuat keputusan pintar*. Ia menganalisis corak dalam buku rekod yang dikongsi itu untuk melihat trend, membantu membuat keputusan yang lebih baik, atau mengesan aktiviti yang tidak normal.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <p class="text-indigo-700 leading-relaxed mt-4">Kesimpulannya, Kampung Baru (DApp) ini adalah **lebih adil, telus, selamat, dan berkuasa** kerana ia dimiliki dan diuruskan bersama oleh semua penduduknya, bukan oleh satu pihak pusat.</p>
+                        </div>
+                        
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Peta Minda Modul</h3>
+                            <div class="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg h-64 flex items-center justify-center text-gray-500">
+                                <p>Peta Minda untuk Modul ini akan datang tidak lama lagi.</p>
+                            </div>
+                        </div>
+
+                        <div class="card bg-white p-6 sm:p-8 rounded-xl shadow-lg">
+                            <h3 class="text-2xl font-bold mb-4 text-gray-700">Glosari Ringkas</h3>
+                            <div class="space-y-2 text-gray-600 leading-relaxed">
+                                <div class="glossary-item"><strong>DApp:</strong> Aplikasi Terdesentralisasi. Aplikasi yang berjalan di rangkaian blockchain tanpa titik kawalan pusat.</div>
+                                <div class="glossary-item"><strong>IoT:</strong> Internet of Things. Rangkaian peranti fizikal yang dilengkapi sensor dan perisian untuk mengumpul dan bertukar data.</div>
+                                <div class="glossary-item"><strong>AI:</strong> Artificial Intelligence. Kecerdasan Buatan. Sistem yang boleh melakukan tugas yang biasanya memerlukan kecerdasan manusia, seperti pembelajaran dan penyelesaian masalah.</div>
+                                <div class="glossary-item"><strong>Smart Contract:</strong> Kontrak Pintar. Kod yang disimpan di blockchain yang secara automatik melaksanakan perjanjian apabila syarat tertentu dipenuhi.</div>
+                                <div class="glossary-item"><strong>Blockchain:</strong> Rantaian Blok. Sistem rekod teragih yang selamat dan tidak boleh diubah, digunakan untuk merekod transaksi.</div>
+                                <div class="glossary-item"><strong>Node:</strong> Nod. Komputer atau pelayan yang merupakan sebahagian daripada rangkaian blockchain, menyimpan salinan lejar.</div>
+                                <div class="glossary-item"><strong>Web 2.0:</strong> Generasi web semasa yang terpusat, di mana syarikat besar mengawal data dan platform.</div>
+                                <div class="glossary-item"><strong>Web 3.0:</strong> Generasi web masa depan yang terdesentralisasi, di mana pengguna mempunyai lebih kawalan ke atas data dan aplikasi mereka.</div>
+                                <div class="glossary-item"><strong>API:</strong> Application Programming Interface. Set definisi yang membolehkan dua aplikasi berkomunikasi antara satu sama lain.</div>
+                                <div class="glossary-item"><strong>P2P:</strong> Peer-to-Peer. Rangkaian di mana komputer berkomunikasi secara terus antara satu sama lain tanpa pelayan pusat.</div>
+                                <div class="glossary-item"><strong>Unkillable:</strong> Tidak boleh dimatikan. Merujuk kepada aplikasi terdesentralisasi yang tidak mempunyai satu titik kegagalan dan sukar untuk ditutup.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
