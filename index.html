@@ -731,6 +731,7 @@
             });
 
             // Automatically open the first tab on page load or based on URL hash
+            // Changed initial tab to 'modul1' as per latest request
             const initialTab = window.location.hash ? window.location.hash.substring(1) : 'modul1';
             // Check if the initialTab exists, otherwise default to 'modul1'
             if (document.getElementById(initialTab)) {
